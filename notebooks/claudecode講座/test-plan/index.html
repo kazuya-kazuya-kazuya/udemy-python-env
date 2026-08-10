@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福岡市の今日の天気</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>福岡市の天気</h1>
+    <p class="date" id="date"></p>
+
+    <div id="loading">読み込み中...</div>
+    <div id="error" class="hidden"></div>
+
+    <div id="weather" class="hidden">
+      <div class="icon" id="icon"></div>
+      <div class="temp-now" id="temp-now"></div>
+      <div class="desc" id="desc"></div>
+
+      <div class="range">
+        <span>最高 <strong id="temp-max"></strong></span>
+        <span>最低 <strong id="temp-min"></strong></span>
+      </div>
+
+      <div class="extra">
+        <div>湿度: <span id="humidity"></span></div>
+        <div>風速: <span id="wind"></span></div>
+        <div>降水確率: <span id="precip"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
